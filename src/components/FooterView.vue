@@ -2,8 +2,8 @@
     <div class="container-fluid bg-success fixed-bottom">
         <div class="row">
             <p class="lead">
-                Razien's Portfolio &copy;
-                <span>{{ currYear }}</span>
+                <b class="bold-text">-Portfolio of Razien Mackenzie &copy;</b>
+                <span>{{ currYear }}-</span>
             </p>
         </div>
     </div>
@@ -20,5 +20,13 @@
 </script>
 
 <style scoped>
+.bold-text {
+  font-weight: bold;
+  color: black;
+}
 
+span {
+    color: black;
+    font-weight: bold;
+}
 </style>
