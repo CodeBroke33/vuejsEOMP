@@ -4,7 +4,7 @@
      <router-link to="/">
           <img class="img-fluid rounded-circle"  src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYRd_KY4JPDxA86ZH1G9Uh0cWxivl3bEDI43QGsxE4K6xZzhWWflCNPgbRw7lQBsl1ubZxXyM0uEfA0TC53v9W_XMoQmrQ=w857-h892" alt="logo">
      </router-link>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/">
@@ -33,7 +33,7 @@
           </li>
           <li class="nav-item">
               <router-link to="/reachme">
-                <b class="container text-black">Reach Me</b>
+                <b class="container text-black">Contact</b>
             </router-link>
           </li>
          
@@ -56,6 +56,6 @@
  display: auto;
  justify-content: end;
  align-items: end;  
-
+ font-family:  Righteous;
   }
   </style>

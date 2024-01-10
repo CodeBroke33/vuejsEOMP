@@ -27,4 +27,10 @@ export default {
 </script>
 <style src="./assets/CSS/styles.css">
 
+
+</style>
+<style>
+*::selection {
+  background-color: rgb(0, 0, 0);
+}
 </style>

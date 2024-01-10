@@ -1,8 +1,7 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <h2 class="display-2">Reach Me</h2>
-        </div>
+    <div class="contact">
+        
+            <h2>Reach Me</h2>
     </div>
 </template>
 
@@ -13,5 +12,7 @@
 </script>
 
 <style scoped>
-
+contact {
+    padding: 46vh;
+}
 </style>

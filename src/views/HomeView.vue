@@ -1,7 +1,10 @@
 <template>
-  <main class="container-fluid">
-    <div class="home text-white">
- <h1>Hello, Im Razeen Mackenzie</h1>  
+  <main class="home text-white">
+    <div>
+      <div class="content">
+        <img class="profile-img" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQ0AhZThBLjgtmRYAxKtE3tGAGD0K-oTzb2Wl345WWD-2evoQWnaBp5sxaaQk0q07iAQ4ZRxtuUK4OAQh7yrPR3a1tgvg=w1242-h912" alt="Profile Photo">
+ <h1><p>Hello,</p><p>Im Razeen Mackenzie</p><p>An Aspiring</p><p>Web Developer,</p><p>OPS Administrator</p><p>and</p><p>Graphic Designer</p></h1>  
+      </div>
 </div>
 <div>
   <p></p>
@@ -31,23 +34,38 @@ main {
     padding:46vh 45vw;
     margin: 100wh;
     position: relative;
-    height: 100%;
-    width: 100%;
-    filter: contrast(20);
+    height: 100vh;
+    width: 100vw;
     background: #000;
     overflow: hidden;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+
+}
+
+.profile-img {
+  width: 300px;
+  /* height: ; */
+  /* padding-right: rem; */
+  margin-top: -8rem;
+  border-radius: 50%; 
+}
+
+
 h1 {
     font-family: Righteous;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     line-height: 1;
-    animation: letterspacing 5s infinite alternate ease-in-out;
+    animation: letterspacing 8s infinite alternate ease-in-out;
     display: block;
     position: absolute;
-    left: 50%;
+    filter: contrast(20);
+    left: 70%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
     letter-spacing: -2.2rem;
