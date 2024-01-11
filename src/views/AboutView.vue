@@ -17,6 +17,20 @@
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
 <script>
+//  export default {
+//         name: "AboutView",
+//         data() {
+//             return{
+//                 let gsap.timeline();
+
+//                 timeline.to(../assets/tumblr_59ac39c4fd07fbac0b4b5d43cc86205c_c353f219_500.webp,{
+//                   height:"500px"
+//                   duration:  1.5,
+//                   ease: "power4.inOut", 
+//                 })
+//             }
+//         }
+//     }
 </script>
 
 <style scoped>
