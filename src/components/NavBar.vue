@@ -57,5 +57,6 @@
  justify-content: end;
  align-items: end;  
  font-family:  Righteous;
+ border-radius: 0%;
   }
   </style>

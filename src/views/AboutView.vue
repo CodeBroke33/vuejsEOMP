@@ -6,8 +6,8 @@
   <div class="about ">
     <div class="image-wrap"></div>
     <h1 class="aboutme">About Me</h1>
-    <span class="scroll hide">Scroll Down</span>
-    <span class="line hide"></span>
+    <span class="scroll ">Scroll Down</span>
+    <span class="line "></span>
   </div>
   <div class="info">
     
@@ -15,7 +15,7 @@
   </main>
 </template>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
 <script>
 </script>
 
@@ -41,7 +41,7 @@ font-size: 7.5rem;
 font-weight: 500;
 text-align: center;
 line-height: 1;
-transform: translateY(1000px);
+transform: translateY(1000px); 
 font-family:  Righteous;
 
 }
@@ -67,6 +67,7 @@ font-family:  Righteous;
   transform: translateX(-50%);
   bottom: 100px;
   height: 50px;
+  font-family:  Righteous;
 }
 
 .line {
@@ -80,7 +81,7 @@ font-family:  Righteous;
 
 }
 
-.hide {
+/* .hide {
   opacity: 0;
-}
+} */
 </style>
