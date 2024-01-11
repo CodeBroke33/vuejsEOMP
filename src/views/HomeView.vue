@@ -47,11 +47,15 @@ main {
 }
 
 .profile-img {
+  height: px;
   width: 300px;
   /* height: ; */
   /* padding-right: rem; */
   margin-top: -8rem;
-  border-radius: 50%; 
+  border-radius: 0%; 
+  position: absolute;
+  left: 17em;
+  top: 20em;
 }
 
 

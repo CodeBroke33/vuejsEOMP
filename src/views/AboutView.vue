@@ -7,30 +7,17 @@
     <div class="image-wrap"></div>
     <h1 class="aboutme">About Me</h1>
     <span class="scroll ">Scroll Down</span>
-    <span class="line "></span>
+    <span class="line"></span>
   </div>
   <div class="info">
-    
+    <h1> </h1>
   </div>
   </main>
 </template>
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> -->
-<script>
-//  export default {
-//         name: "AboutView",
-//         data() {
-//             return{
-//                 let gsap.timeline();
 
-//                 timeline.to(../assets/tumblr_59ac39c4fd07fbac0b4b5d43cc86205c_c353f219_500.webp,{
-//                   height:"500px"
-//                   duration:  1.5,
-//                   ease: "power4.inOut", 
-//                 })
-//             }
-//         }
-//     }
+<script>
+  
 </script>
 
 <style scoped>
@@ -43,7 +30,7 @@ main {
   padding: 46vh;
   background-color: black;
   min-height: 750px;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
 }
 
@@ -51,11 +38,12 @@ main {
 position: relative;
 z-index: 1;
 color: white;
-font-size: 7.5rem;
+font-size: 12rem;
 font-weight: 500;
 text-align: center;
 line-height: 1;
-transform: translateY(1000px); 
+margin-top: -8%;
+/* transform: translateY(1000px);  */
 font-family:  Righteous;
 
 }
@@ -94,6 +82,14 @@ font-family:  Righteous;
   background-image: linear-gradient(to top, white, grey);
 
 }
+
+.info {
+font-family: Righteous !important;
+padding: 50% 60%;
+
+}
+
+
 
 /* .hide {
   opacity: 0;
