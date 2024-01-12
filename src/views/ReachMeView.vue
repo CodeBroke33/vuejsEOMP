@@ -52,7 +52,7 @@
     color: white;
     font-family: Righteous;
     height: 100%;
-    overflow: ;
+    overflow:0 ;
 }
 
 #wrap {
@@ -125,7 +125,7 @@ form{
 }  */
 
 label{
-    margin: ;
+    margin: auto;
 }
 
 .cntct {
