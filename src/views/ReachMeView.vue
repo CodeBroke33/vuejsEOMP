@@ -4,29 +4,32 @@
         <h1>Reach Me</h1>
         <br><br><br>
         <div id="form-wrap">
-            <form>
-                <label for="email">Your Message:</label>
-                <textarea name="message" id="message" value="Your Message"></textarea>
+        <form>
+           <p> <label for="name">Name:</label></p>
+            <p><input type="text" id="name" name="name" required></p>
 
-                <label for="name">Name:</label>
-                <input type="text" name="name" value="" id="name">
+            <p><label for="email">Email:</label></p>
+            <p><input type="email" id="email" name="email" required></p>
 
-                <label for="email">Email:</label>
-                <input type="text" name="email" value="" id="email">
+            <p><label for="message">Message:</label></p>
+            <p><textarea id="message" name="message" rows="4" required></textarea></p>
 
-                <input type="submit" name="submit" id="" value="Submit">
-            </form>
+                <a href="https://formspree.io/f/mzblyrzz" method="POST" target="_blank" ><button type="button">SUBMIT</button></a>
+           
+        </form>
         </div>
-        <div>
-           <div><div><p class="cntct">Contact Info</p></div></div>
-          
-          <div> <p class="other">Contact: 068 373 5646</p>
-                <p class="other"></p>
-                <p class="other"></p>
+        <div class="words">
+            <div><h4 class="details">My Contact Details</h4></div>
+            <div></div>
+            <p class="details">Phone num:021 637 6410/068 373 5646</p>
+            <p class="details">Email:razeenmackenzie@gmail.com</p>
+            <p class="details">Slack:Razeen Mackenzie</p>
+            <p class="details">Whatsapp:068 373 5646</p>
+
         </div>
 
         </div>
-        </div>
+        
         
     </div>
 
@@ -42,7 +45,7 @@
 
  div, form, fieldset, input, textarea {
     outline: none;
-    height: 50px;
+    height: 51px;
  }
 
 
@@ -79,7 +82,7 @@ h1 {
 #form-wrap:before{
     content: "";
     position: absolute;
-    bottom: 128px;
+    bottom: 90px;
     left: 0px;
     background: url('../assets/before-removebg-preview.png');
     width: 530px;
@@ -89,7 +92,7 @@ h1 {
 #form-wrap:after{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
     left: 0;
     background: url('../assets/after-removebg-preview.png');
     width: 530px;
@@ -102,7 +105,7 @@ h1 {
 }
 
 #form-wrap:hover{
-    height: 700px;
+    height: 777px;
     top: -311px;
 }
 
@@ -125,8 +128,11 @@ form{
 }  */
 
 label{
-    margin: auto;
-}
+    /* margin: auto; */
+    color: black;
+    font-size: em;
+
+ } 
 
 .cntct {
     margin: 4%;
@@ -139,5 +145,23 @@ label{
     margin: 4%;
     font-size: 1rem;
     position: absolute;
+}
+
+.submit {
+    border-radius: 20%;
+    max-width:200px;
+    position: absolute;
+    top: 326px;
+    left: 230px;
+
+}
+
+.submit:hover {
+    background-color: rgb(51, 183, 139);
+    transition: all;
+}
+
+.details {
+    font-size: 2em;
 }
 </style>
