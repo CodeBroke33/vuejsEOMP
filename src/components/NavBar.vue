@@ -1,8 +1,9 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-toggler bg-success fixed-top justify-content-end">
+
     <div class="container-fluid">
      <router-link to="/">
-          <img class="img-fluid rounded-circle"  src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYRd_KY4JPDxA86ZH1G9Uh0cWxivl3bEDI43QGsxE4K6xZzhWWflCNPgbRw7lQBsl1ubZxXyM0uEfA0TC53v9W_XMoQmrQ=w857-h892" alt="logo">
+          <img class="img-fluid rounded-circle"  src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYSe3-2xolwUNyXeyjbc_FC0Nfo72BVU3Rx_GB9WgxvGbI7FpUvvU92rYkby_XFFnY35EA8OVSNCpfs76RGrqD5Gmh6zpw=w1920-h912" alt="logo">
      </router-link>
       <div id="navbarNav">
         <ul class="navbar-nav">

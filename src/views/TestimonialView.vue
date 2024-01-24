@@ -1,86 +1,32 @@
 <template>
-    <div class="testimonial bg-black text-white">
-    <h2 class="text-center mb-4">Testimonials</h2>
-
-    <div id="testimonialCarousel" class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="testimonial">
-            <p>This is the first testimonial. It's great!</p>
-            <p><strong>John Doe</strong></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonials">
-            <p>This is the second testimonial. It's even better!</p>
-            <p><strong>Jane Doe</strong></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonials">
-            <p>This is the second testimonial. It's even better!</p>
-            <p><strong>Jane Doe</strong></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonials">
-            <p>This is the second testimonial. It's even better!</p>
-            <p><strong>Jane Doe</strong></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonials">
-            <p>This is the second testimonial. It's even better!</p>
-            <p><strong>Jane Doe</strong></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonials">
-            <p>This is the second testimonial. It's even better!</p>
-            <p><strong>Jane Doe</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <main class="testimonial bg-black">
+  <div>
+    <h1>Testimonials</h1>
+ </div>
+ <div>
+  
+ </div>
+</main>
+ 
 </template>
 
 <script>
+// import jsonData from ''
     export default {
-        name: "TestimonialPage"
+      data(){
+        return{
+          // data: jsonData
+        }
+      }        
     }
 </script>
 
 <style scoped>
 .testimonial {
-    padding: 30vh;
+    padding: 11.5vh;
     font-family: Righteous;
+    color:white;
 }
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-}
 
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-}
-
-.testimonial {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-}
-
-@media (min-width: 576px) {
-  .testimonial-container {
-    padding: 40px;
-  }
-}
 </style>

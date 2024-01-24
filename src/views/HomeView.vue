@@ -48,14 +48,14 @@ main {
 
 .profile-img {
   height: px;
-  width: 300px;
+  width: 350px;
   /* height: ; */
   /* padding-right: rem; */
   margin-top: -8rem;
-  border-radius: 0%; 
+  border-radius: 20%; 
   position: absolute;
-  left: 17em;
-  top: 20em;
+  left: 13em;
+  top: 18em;
 }
 
 
@@ -65,7 +65,7 @@ h1 {
     font-size: 3rem;
     text-transform: uppercase;
     line-height: 1;
-    animation: letterspacing 8s infinite alternate ease-in-out;
+    animation: letterspacing 5s infinite alternate ease-in-out;
     display: block;
     position: absolute;
     filter: contrast(20);

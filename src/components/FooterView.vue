@@ -8,7 +8,7 @@
         </div>
         
         <div class="text text-black">
-            <a href="https://github.com/yourgithubusername" target="_blank">
+            <a href="https://github.com/CodeBroke33/" target="_blank">
         <i class="bi bi-github text-black" style="font-size: -1rem; margin-right: 1rem;"></i>
       </a>
       <a href="https://github.com/yourgithubusername" target="_blank">
