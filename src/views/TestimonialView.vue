@@ -1,32 +1,80 @@
 <template>
-  <main class="testimonial bg-black">
-  <div>
-    <h1>Testimonials</h1>
- </div>
- <div>
-  
- </div>
-</main>
- 
+  <div id="testimonialCarousel" class="carousel slide bg-black" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
+        <img :src="testimonial.profile" class="d-block w-100" alt="Testimonial">
+        <div class="carousel-caption">
+          <h5>{{ testimonial.name }}</h5>
+          <p>{{ testimonial.quotes }}</p>
+        </div>
+      </div> -->
+      <div class="card mb-3 w-100" v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
+        <!-- {{ testimonial.quotes }} -->
+        <div class="row g-0">
+          <div class="we col-lg-4 bg-black">
+            <img :src="testimonial.profile" class="img-fluid rounded-start vh-25" :alt="testimonial.name">
+          </div>
+          <div class="we col-lg-8 bg-black">
+            <div class="card-body">
+              <h5 class="card-title text-white">{{ testimonial.name + ' ' + testimonial.surname }}</h5>
+              <p class="card-text text-white">{{ testimonial.quotes }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </template>
 
 <script>
-// import jsonData from ''
-    export default {
-      data(){
-        return{
-          // data: jsonData
-        }
-      }        
+export default {
+  data() {
+    return {
+    };
+  },
+  mounted() {
+    // Fetch testimonials from JSON file
+    // fetch('path/to/testimonials.json')
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     this.testimonials = data;
+    //   })
+    //   .catch(error => {
+    //     console.error('Error fetching testimonials:', error);
+    //   });
+  },
+  computed: {
+    testimonials(){
+      return this.$store.state.testimonials;
     }
+  }
+};
 </script>
 
 <style scoped>
-.testimonial {
-    padding: 11.5vh;
-    font-family: Righteous;
-    color:white;
+#testimonialCarousel{
+  padding: 46vh;
+  background-color: ;
 }
 
+h5 {
+  font-family: Righteous;
+}
 
+p{
+font-family: Righteous;
+}
+
+.we {
+  border-radius: 0%;
+  border-color: black;
+}
 </style>

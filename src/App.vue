@@ -22,7 +22,15 @@ export default {
   components: {
    FooterView, 
    NavBar,
-}
+  },
+  mounted() {
+    this.getData()
+  },
+  methods: {
+    getData(){
+      this.$store.dispatch('fetchData')
+    }
+  }
 }
 </script>
 <style src="./assets/CSS/styles.css">
