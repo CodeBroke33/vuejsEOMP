@@ -1,7 +1,7 @@
-<!-- Page.vue -->
+<!-- resumePage.vue -->
 <template>
   <div class="container-fluid mt-5 bg-black" >
-    <h1 class="we mb-4 text-white fs- ">Resume</h1>
+    <h1 class="we mb-4 text-white fs-1 ">Resume</h1>
 
     <section class="we">
       <h2 class=" text-success text-decoration-underline">Work Experience</h2>
@@ -10,8 +10,8 @@
           <div v-for="(job, index) in workExperience" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
             <div class="card bg-dark text-white mb-4">
               <div class="card-body">
-                <h5 class="card-title">{{ jobTitle.title }}</h5>
-                <p class="card-text">{{ jobTitle.company }} - {{ job.location }}</p>
+                <h5 class="card-title">{{ job.position }}</h5>
+                <p class="card-text">{{ job.company }} - {{ job.location }}</p>
                 <p class="card-text">{{ job.date }}</p>
               </div>
             </div>
@@ -57,44 +57,28 @@
 
 <script>
 export default {
-  // data() {
-  //   return {
-  //     workExperience: [
-  //       {
-  //         position: 'Web Developer',
-  //         company: 'ABC Inc.',
-  //         location: 'City, Country',
-  //         date: 'January 2020 - Present',
-  //       },
-  //       {
-  //         position: 'Web Developer',
-  //         company: 'ABC Inc.',
-  //         location: 'City, Country',
-  //         date: 'January 2020 - Present',
-  //       }
-  //     ],
-  //     education: [
-  //       {
-  //         degree: 'Bachelor of Science in Computer Science',
-  //         school: 'XYZ University',
-  //         location: 'City, Country',
-  //         date: 'September 2016 - May 2020',
-  //       },
-  //       {
-  //         degree: 'Bachelor of Science in Computer Science',
-  //         school: 'XYZ University',
-  //         location: 'City, Country',
-  //         date: 'September 2016 - May 2020',
-  //       }
-  //     ],
-  //   };
-  // },
-// }
-computed: {
-    education(){
-      return this.$store.state.jobTitle;
-    }
-  }
+  data() {
+    return {
+      workExperience: [
+        {
+          position: 'Web Developer',
+          company: 'ABC Inc.',
+          location: 'City, Country',
+          date: 'January 2020 - Present',
+        },
+        // Add more work experience items as needed
+      ],
+      education: [
+        {
+          degree: 'Bachelor of Science in Computer Science',
+          school: 'XYZ University',
+          location: 'City, Country',
+          date: 'September 2016 - May 2020',
+        },
+        // Add more education items as needed
+      ],
+    };
+  },
 };
 </script>
 
@@ -104,6 +88,6 @@ div {
 }
 
 .we {
-  font-family: Righteous ;
+  font-family: Righteous;
 }
 </style>
