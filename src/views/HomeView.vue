@@ -2,7 +2,7 @@
   <main class="home text-white">
     <div>
       <div class="content">
-        <img class="profile-img" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQ0AhZThBLjgtmRYAxKtE3tGAGD0K-oTzb2Wl345WWD-2evoQWnaBp5sxaaQk0q07iAQ4ZRxtuUK4OAQh7yrPR3a1tgvg=w1242-h912" alt="Profile Photo">
+        <img class="profile-img" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQiTkEjpOO6M5crpaEK03VqdYj5bsJ0iFFKT4hYJhasuXhp7TLHPrahbTKk5MgNMB-BX_XvhFHlQbP1-g0LIMHkg_xnTA=w1242-h912" alt="Profile Photo">
  <h1><p>Hello,</p><p>Im Razeen Mackenzie</p><p>An Aspiring</p><p>Web Developer,</p><p>OPS Administrator</p><p>and</p><p>Graphic Designer</p></h1>  
       </div>
 </div>
@@ -47,15 +47,15 @@ main {
 }
 
 .profile-img {
-  height: px;
-  width: 350px;
+  height: auto;
+  width: 500px;
   /* height: ; */
   /* padding-right: rem; */
   margin-top: -8rem;
-  border-radius: 20%; 
+  border-radius: 10%; 
   position: absolute;
-  left: 13em;
-  top: 18em;
+  left: 10em;
+  top: 5em;
 }
 
 
