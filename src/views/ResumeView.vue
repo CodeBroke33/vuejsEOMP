@@ -3,16 +3,16 @@
   <div class="container-fluid mt-5 bg-black" >
     <h1 class="we mb-4 text-white fs-1 ">Resume</h1>
 
-    <section class="we">
+    <section class="we mt-5">
       <h2 class=" text-success text-decoration-underline">Work Experience</h2>
       <div class="carousel slide" id="workCarousel" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div v-for="(job, index) in jobTitle" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
+          <div v-for="(work, index) in workExperiece" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
             <div class="card bg-dark text-white mb-4">
               <div class="card-body">
-                <h5 class="card-title">{{ job.title }}</h5>
-                <!-- <p class="card-text">{{ job.company }} - {{ job.location }}</p>
-                <p class="card-text">{{ job.date }}</p> -->
+                <h5 class="card-title">{{ work.title }}</h5>
+                <p class="card-text">{{ work.company }} - {{ work.location }}</p>
+                <p class="card-text">{{ work.date }}</p>
               </div>
             </div>
           </div>
@@ -34,10 +34,10 @@
         <div class="carousel-inner">
           <div v-for="(edu, index) in education" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
             <div class="card bg-dark text-white mb-4">
-              <div class="card-body">
-                <h5 class="card-title">{{ edu.type }}</h5>
-                <p class="card-text">{{ edu.description }} - {{ edu.place }}</p>
-                <p class="card-text">{{ edu.year }}</p>
+              <div class="card-body bg-white">
+                <h5 class="card-title">{{ edu.position }}</h5>
+                <p class="card-text">{{ edu.company }} - {{ edu.location }}</p>
+                <p class="card-text">{{ edu.date }}</p>
               </div>
             </div>
           </div>
@@ -57,30 +57,29 @@
 
 <script>
 export default {
-  // data() {
-  //   return {
-  //     workExperience: [
-  //       
-  //         position: 'Web Developer',
-  //         company: 'ABC Inc.',
-  //         location: 'City, Country',
-  //         date: 'January 2020 - Present',
-  //       },
-  //       // Add more work experience items as needed
-  //     ],
-  //     education: [
-  //       {
-  //         degree: 'Bachelor of Science in Computer Science',
-  //         school: 'XYZ University',
-  //         location: 'City, Country',
-  //         date: 'September 2016 - May 2020',
-  //       },
-  //       // Add more education items as needed
-  //     ],
-  //   };
-  // },
-
-computed: {
+  data() {
+    return {
+      workExperiece: [
+        {
+          position: 'OPS Administrater',
+          company: 'Woolworths',
+          location: 'Cape Town, South Africa',
+          date: 'November 2019 - Present',
+        }
+        
+      ]
+      // education: [
+      //   {
+      //     degree: 'Bachelor of Science in Computer Science',
+      //     school: 'XYZ University',
+      //     location: 'City, Country',
+      //     date: 'September 2016 - May 2020',
+      //   },
+        
+      // ],
+    }
+  },
+  computed: {
 
   //  jobTitile(){
   //     return this.$store.state.jobTitile
@@ -89,7 +88,7 @@ computed: {
       return this.$store.state.education
     }
   }
-};
+}
 </script>
 
 <style scoped>
