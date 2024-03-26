@@ -1,14 +1,13 @@
 <template>
   <main class="home text-white">
-    <div>
-      <div class="content">
-        <img class="profile-img" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYQiTkEjpOO6M5crpaEK03VqdYj5bsJ0iFFKT4hYJhasuXhp7TLHPrahbTKk5MgNMB-BX_XvhFHlQbP1-g0LIMHkg_xnTA=w1242-h912" alt="Profile Photo">
- <h1><p>Hello,</p><p>Im Razeen Mackenzie</p><p>An Aspiring</p><p>Web Developer,</p><p>OPS Administrator</p><p>and</p><p>Graphic Designer</p></h1>  
-      </div>
-</div>
-<div>
-  <p></p>
-</div>
+    <div class=row>
+        <div class="col">
+            <img class="profile-img img-fluid" src="https://i.ibb.co/Z2rv961/DSC-03021.jpg" alt="Profile Photo">
+        </div>
+        <div class="col">
+            <h1><p>Hello,</p><p>Im Razeen Mackenzie</p><p>An Aspiring</p><p>Web Developer,</p><p>OPS Administrator</p><p>and</p><p>Graphic Designer</p></h1>  
+        </div>
+    </div>
   </main>
   
 </template>
@@ -40,14 +39,9 @@ main {
     overflow: hidden;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-
-}
 
 .profile-img {
-  height: auto;
+  height: 500px;
   width: 500px;
   /* height: ; */
   /* padding-right: rem; */
@@ -55,7 +49,7 @@ main {
   border-radius: 10%; 
   position: absolute;
   left: 10em;
-  top: 5em;
+  top: 14.6em;
 }
 
 

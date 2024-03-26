@@ -9,7 +9,7 @@
             <div class="card-body bg-black">
               <h5 class="card-title">{{ project.name }}</h5>
               <p class="card-text">{{ project.description }}</p>
-              <a :href="project.siteUrl" class="btn btn-primary" target="_blank">Visit Site</a>
+              <a :href="project.siteUrl" class="btn btn-success" target="_blank">Visit Site</a>
               <a :href="project.githubUrl" class="btn btn-secondary" target="_blank">GitHub</a>
             </div>
           </div>
@@ -84,6 +84,7 @@
   <style scoped>
   .projects {
     padding: 6vh;
+    font-family: righteous;
 
   }
   </style>

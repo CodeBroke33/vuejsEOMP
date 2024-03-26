@@ -3,7 +3,7 @@
 
     <div class="container-fluid">
      <router-link to="/">
-          <img class="img-fluid rounded-circle"  src="https://lh3.googleusercontent.com/u/0/drive-viewer/AEYmBYSe3-2xolwUNyXeyjbc_FC0Nfo72BVU3Rx_GB9WgxvGbI7FpUvvU92rYkby_XFFnY35EA8OVSNCpfs76RGrqD5Gmh6zpw=w1920-h912" alt="logo">
+          <img class="img-fluid rounded-circle"  src="https://i.ibb.co/NsFC71t/RM-Logo.png" alt="logo">
      </router-link>
       <div id="navbarNav">
         <ul class="navbar-nav">
