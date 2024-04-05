@@ -1,107 +1,76 @@
 <template>
   <main class="home text-white">
-    <div class=row>
-        <div class="col">
-            <img class="profile-img img-fluid" src="https://i.ibb.co/Z2rv961/DSC-03021.jpg" alt="Profile Photo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            class="profile-img img-fluid"
+            src="https://i.ibb.co/Z2rv961/DSC-03021.jpg"
+            alt="Profile Photo"
+          />
         </div>
-        <div class="col">
-            <h1><p>Hello,</p><p>Im Razeen Mackenzie</p><p>An Aspiring</p><p>Web Developer,</p><p>OPS Administrator</p><p>and</p><p>Graphic Designer</p></h1>  
+        <div class="col-md-6">
+          <h1 class="text-shadow">
+            <p class="text-success">Hello,</p>
+            <p class="text-success">I'm Razeen Mackenzie</p>
+            <p class="text-success">An Skilled</p>
+            <p class="text-success">Web Developer,</p>
+            <p class="text-success">OPS Administrator</p>
+            <p class="text-success">and</p>
+            <p class="text-success">Graphic Designer</p>
+            <h1 class="we">Graphic Designer</h1>
+          </h1>
         </div>
+      </div>
     </div>
   </main>
-  
 </template>
 
-<!-- <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
+<script>
 export default {
-  computed: {
-    jobTitle(){
-      return this.$store.state.jobTitle
-
-    }
-  }
-  }
-</script> -->
+  
+}
+</script>
 
 <style scoped>
-
 main {
-    display: flex;
-    padding:46vh 45vw;
-    margin: 100wh;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background: #000;
-    overflow: hidden;
+  padding: 8% 5%;
+  position: relative;
 }
-
 
 .profile-img {
+  max-width: 100%;
   height: 500px;
-  width: 500px;
-  /* height: ; */
-  /* padding-right: rem; */
-  margin-top: -8rem;
-  border-radius: 10%; 
-  position: absolute;
-  left: 10em;
-  top: 14.6em;
+  border-radius: 10%;
+  border: solid 3px grey;
 }
-
 
 h1 {
-    font-family: Righteous;
-    color: white;
-    font-size: 3rem;
-    text-transform: uppercase;
-    line-height: 1;
-    animation: letterspacing 5s infinite alternate ease-in-out;
-    display: block;
-    position: absolute;
-    filter: contrast(20);
-    left: 70%;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    letter-spacing: -2.2rem;
-    white-space: nowrap;
+  font-family: Righteous;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
 }
 
-@keyframes letterspacing {
-    0% {
-        letter-spacing: -2.2rem;
-        filter: blur(.3rem);
-    }
-
-    50% {
-        filter: blur(.4rem);
-    }
-
-    100% {
-        letter-spacing: .5rem;
-        filter: blur(0rem);
-    }
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.we {
+  font-size: x-small;
+}
+
+/* Diagonal Drip Animation */
+.diagonal-drip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, transparent 49%, #00FF00 51%);
+  z-index: -1;
+}
+
 
 </style>
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

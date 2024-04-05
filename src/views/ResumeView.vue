@@ -1,102 +1,118 @@
-<!-- resumePage.vue -->
-<template>
-  <div class="container-fluid mt-5 bg-black" >
-    <h1 class="we mb-4 text-white fs-1 ">Resume</h1>
+  <template>
+    <main>
+      <div class="container-fluid mt-5">
+        <h1 class="we mb-4 text-white fs-1">Education & Experience</h1>
 
-    <section class="we mt-5">
-      <h2 class=" text-success text-decoration-underline">Work Experience</h2>
-      <div class="carousel slide" id="workCarousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div v-for="(work, index) in workExperiece" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
-            <div class="card bg-dark text-white mb-4">
-              <div class="card-body">
-                <h5 class="card-title">{{ work.title }}</h5>
-                <p class="card-text">{{ work.company }} - {{ work.location }}</p>
-                <p class="card-text">{{ work.date }}</p>
+        <!-- Work Experience Section -->
+        <section class="we mt-5">
+          <h2 class="text-success text-decoration-underline">Work Experience</h2>
+          <div class="row">
+            <div class="col-md-6" v-for="(work, index) in workExperience" :key="index">
+              <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">{{ work.position }}</h5>
+                  <p class="card-text">{{ work.company }}</p>
+                  <p class="card-text">{{ work.date }}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
+        </section>
 
-    <section class="we mt-5">
-      <h2 class="text-success text-decoration-underline">Education</h2>
-      <div class="carousel slide" id="eduCarousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div v-for="(edu, index) in education" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
-            <div class="card bg-dark text-white mb-4">
-              <div class="card-body bg-white">
-                <h5 class="card-title">{{ edu.position }}</h5>
-                <p class="card-text">{{ edu.company }} - {{ edu.location }}</p>
-                <p class="card-text">{{ edu.date }}</p>
+        <!-- Education Section -->
+        <section class="we mt-5">
+          <h2 class="text-success text-decoration-underline">Education</h2>
+          <div class="row">
+            <div class="col-md-6" v-for="(edu, index) in education" :key="index">
+              <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">{{ edu.degree }}</h5>
+                  <p class="card-text">{{ edu.school }}</p>
+                  <p class="card-text">{{ edu.date }}</p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+          <!-- Skills Section -->
+          <section class="we mt-3">
+        <h2 class="text-success text-decoration-underline">Skills</h2>
+        <div class="row mx-auto">
+          <div class="col-md-3 mx-auto" v-for="(skill, index) in skills" :key="index">
+            <div class="card bg-white text-white" style="width: 200px; height: 200px;">
+              <img :src="skill.image" class="card-img-top" alt="Skill Image" style="object-fit: cover; width: 100%; height: 100%;">
+            </div>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#eduCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#eduCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </section>
+
       </div>
-    </section>
-  </div>
-</template>
+    </main>
+  </template>
 
-<script>
-export default {
-  data() {
-    return {
-      workExperiece: [
-        {
-          position: 'OPS Administrater',
-          company: 'Woolworths',
-          location: 'Cape Town, South Africa',
-          date: 'November 2019 - Present',
-        }
-        
-      ]
-      // education: [
-      //   {
-      //     degree: 'Bachelor of Science in Computer Science',
-      //     school: 'XYZ University',
-      //     location: 'City, Country',
-      //     date: 'September 2016 - May 2020',
-      //   },
-        
-      // ],
+  <script>
+  export default {
+    data() {
+      return {
+        workExperience: [
+          {
+            position: "Woolworths DC",
+            company: "OPS Administration",
+            date: "January 2019 - Present"
+          },
+          {
+            position: "LC Studios",
+            company: "Software Development Intern",
+            date: "January 2019 - Present"
+          }
+        ],
+        education: [
+          {
+            degree: "Bridge Town High",
+            school: "Matriculated",
+            date: "2012 - 2018"
+          },
+          {
+            degree: "Life Choices Coding Academy",
+            school: "Full Stack Course",
+            date: "2023 - 2024"
+          }
+          
+        ],
+        skills: [
+          {
+            image: "https://i.ibb.co/KsMT8ZS/pngwing-com-2.png"
+          },
+          {
+            image: "https://i.ibb.co/m5jjjZt/pngwing-com-1.png"
+          },
+          {
+            image: "https://i.ibb.co/1MQYMjL/pngwing-com-3.png"
+          },
+          {
+            image: "https://i.ibb.co/4MCh8gx/1-v2vdf-Kq-D4-Mtm-TSg-NP0o5cg.webp"
+          },
+          {
+            image: "https://i.ibb.co/w4ZSZFR/pngwing-com.png"
+          },
+          {
+            image: "https://i.ibb.co/mTcyb5M/mysql.png"
+          }
+        ]
+      };
     }
-  },
-  computed: {
+  };
+  </script>
 
-  //  jobTitile(){
-  //     return this.$store.state.jobTitile
-  //   },
-    education(){
-      return this.$store.state.education
-    }
+  <style scoped>
+  div {
+    padding: 5vh;
   }
-}
-</script>
 
-<style scoped>
-div {
-  padding: 5vh;
-}
+  .we {
+    font-family: Righteous;
+  }
 
-.we {
-  font-family: Righteous ;
-}
-</style>
+
+  </style>

@@ -1,14 +1,15 @@
 <!-- ProjectPage.vue -->
 <template>
-    <div class="projects  mt-5 bg-black">
-      <h2 class="text-center mb-4">Projects</h2>
+    <main>
+      <div class="projects  mt-5">
+      <h2 class="me text-success mb-4 text-succcess">Projects</h2>
       <div class="row">
         <div v-for="(project, index) in projects" :key="index" class="col-md-4">
           <div class="card mb-4">
             <img :src="project.image" class="card-img-top" alt="Project Image">
-            <div class="card-body bg-black">
-              <h5 class="card-title">{{ project.name }}</h5>
-              <p class="card-text">{{ project.description }}</p>
+            <div class="card-body bg-white">
+              <h5 class="card-title text-black">{{ project.name }}</h5>
+              <p class="card-text text-success">{{ project.description }}</p>
               <a :href="project.siteUrl" class="btn btn-success" target="_blank">Visit Site</a>
               <a :href="project.githubUrl" class="btn btn-secondary" target="_blank">GitHub</a>
             </div>
@@ -16,6 +17,7 @@
         </div>
       </div>
     </div>
+    </main>
   </template>
   
   <script>
@@ -85,7 +87,10 @@
   .projects {
     padding: 6vh;
     font-family: righteous;
+  }
 
+  .me {
+    font-size: 80px;
   }
   </style>
   

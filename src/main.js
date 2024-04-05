@@ -6,4 +6,5 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'animejs/lib/anime.js' // Import anime.js library
 createApp(App).use(store).use(router).mount('#app')

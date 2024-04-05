@@ -2,6 +2,7 @@
   <main>
     <router-view/>
   </main>
+  
   <!-- <nav>
     <router-link to="/">Home</router-link>  |
     <router-link to="/about">About</router-link>  |
@@ -36,8 +37,8 @@ export default {
 <style src="./assets/CSS/styles.css">
 
 
-</style>
-<style>
+
+
 *::selection {
   background-color: rgb(0, 0, 0);
 }
