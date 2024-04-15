@@ -13,7 +13,7 @@
             <p><input type="email" id="email" name="email" required /></p>
 
             <p><label for="message">Message:</label></p>
-            <p>
+            <p> 
               <textarea
                 id="message"
                 name="message"
@@ -21,39 +21,46 @@
                 required
               ></textarea>
             </p>
-
             <button class="btn btn-rounded bg-success" type="submit">
               SUBMIT
             </button>
           </form>
         </div>
-        <div class="words">
-          <div><h4 class="details">My Contact Details</h4></div>
-          <div></div>
-          <p class="details">Phone num:021 637 6410/068 373 5646</p>
-          <p class="details">Email:razeenmackenzie@gmail.com</p>
-          <p class="details">Slack:Razeen Mackenzie</p>
-          <p class="details">Whatsapp:068 373 5646</p>
+      </div>
+      <div>
+        <h4 class="details fs-1 text-success">My Contact Details</h4>
+      </div>
+      <br /><br /><br />
+      <div class="row d-flex">
+        <div class="col text-success contact-item">
+          <i class="fs-1 fas fa-envelope"></i><br />
+          Email: razeenmackenzie@gmail.com
+        </div>
+        <div class="col text-success contact-item">
+          <i class="fs-1 fas fa-map-marker-alt"></i> <br />Location: Cape Town,
+          Athlone
+        </div>
+        <div class="col text-success contact-item">
+          <i class="fs-1 fas fa-phone"></i> <br />Cellphone: 068 373 5646
         </div>
       </div>
+      <br /><br />
+      <div class="col text-white contact-item">
+        <i class="fs-1 fab fa-linkedin"></i> <br />LinkedIn:
+        linkedin.com/in/yourprofile
+      </div>
+      <div class="col text-white contact-item">
+        <i class="fs-1 fab fa-linkedin"></i> <br />LinkedIn:
+        linkedin.com/in/yourprofile
+      </div>
     </div>
-    <div class="wrapper">
-  <div class="neon">
-
-    
-
-
-  </div>
-</div>
   </main>
 </template>
 
 <script>
 //import anime from 'animejs'; // Import anime.js library if not already imported
 
-export default {
- 
-};
+export default {};
 </script>
 
 <style scoped>
@@ -84,7 +91,7 @@ textarea {
 #wrap {
   width: 530px;
   margin: 20px auto 0;
-  height: 1000px;
+  height: 700px;
 }
 
 h1 {
@@ -185,7 +192,6 @@ label {
   font-size: 2em;
 }
 
-
 /* Responsive Styling */
 @media only screen and (max-width: 768px) {
   .contact-form,
@@ -229,5 +235,4 @@ label {
     bottom: -20px;
   }
 }
-
 </style>

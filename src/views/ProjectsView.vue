@@ -2,7 +2,9 @@
 <template>
     <main>
       <div class="projects  mt-5">
-      <h2 class="me text-success mb-4 text-succcess">Projects</h2>
+      <h2 class="me text-success mb-4 text-black">Projects</h2>
+
+      <h2 class="text-success mb-4 fs-2 text-decoration-underline">Full Stack Projects</h2>
       <div class="row">
         <div v-for="(project, index) in projects" :key="index" class="col-md-4">
           <div class="card mb-4">

@@ -61,16 +61,6 @@ h1 {
   font-size: x-small;
 }
 
-/* Diagonal Drip Animation */
-.diagonal-drip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, transparent 49%, #00FF00 51%);
-  z-index: -1;
-}
 
 
 </style>
