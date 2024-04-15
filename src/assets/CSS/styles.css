@@ -41,6 +41,9 @@ img[alt='logo']{
     margin: 0;
     padding: 0;
      /* Prevent scrollbars */
+     background-image: url('../abstract-digital-background-with-technology-circuit-board-texture-electronic-motherboard-illustration-communication-and-engineering-concept-illustration-vector.jpg');
+  background-size: cover;
+  background-repeat: repeat;
     width: 100%;
     height: 100%;
 }

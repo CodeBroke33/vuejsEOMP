@@ -2,7 +2,7 @@
   <main>
     <div class="contact">
       <div id="wrap">
-        <h1 class="text-success">Reach Me</h1>
+        <h1 class="text-success display-2">Reach Me</h1>
         <br /><br /><br />
         <div id="form-wrap">
           <form action="https://formspree.io/f/mzblyrzz" method="POST">
@@ -13,7 +13,7 @@
             <p><input type="email" id="email" name="email" required /></p>
 
             <p><label for="message">Message:</label></p>
-            <p> 
+            <p>
               <textarea
                 id="message"
                 name="message"
@@ -21,7 +21,7 @@
                 required
               ></textarea>
             </p>
-            <button class="btn btn-rounded bg-success" type="submit">
+            <button class="btn btn-rounded btn-success" type="submit">
               SUBMIT
             </button>
           </form>
@@ -33,26 +33,30 @@
       <br /><br /><br />
       <div class="row d-flex">
         <div class="col text-success contact-item">
-          <i class="fs-1 fas fa-envelope"></i><br />
+          <i class="fas fa-envelope fs-2"></i><br />
           Email: razeenmackenzie@gmail.com
         </div>
         <div class="col text-success contact-item">
-          <i class="fs-1 fas fa-map-marker-alt"></i> <br />Location: Cape Town,
+          <i class="fas fa-map-marker-alt fs-2"></i> <br />Location: Cape Town,
           Athlone
         </div>
         <div class="col text-success contact-item">
-          <i class="fs-1 fas fa-phone"></i> <br />Cellphone: 068 373 5646
+          <i class="fas fa-phone fs-2"></i> <br />Cellphone: 068 373 5646
         </div>
       </div>
       <br /><br />
-      <div class="col text-white contact-item">
-        <i class="fs-1 fab fa-linkedin"></i> <br />LinkedIn:
-        linkedin.com/in/yourprofile
-      </div>
-      <div class="col text-white contact-item">
-        <i class="fs-1 fab fa-linkedin"></i> <br />LinkedIn:
-        linkedin.com/in/yourprofile
-      </div>
+      <!-- <div class="row d-flex">
+        <div class="col text-white contact-item">
+          <i class="fab fa-linkedin fs-2"></i> <br />LinkedIn:
+          linkedin.com/in/yourprofile
+        </div>
+        <div class="col text-white contact-item">
+          <i class="fab fa-linkedin fs-2"></i> <br />LinkedIn:
+          linkedin.com/in/yourprofile
+        </div>
+      </div> -->
+      <br>
+      <br>
     </div>
   </main>
 </template>
