@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-toggler bg-success fixed-top justify-content-end">
+  <nav class="navbar navbar-expand-lg navbar-toggler fixed-top">
     <div class="container-fluid">
       <router-link to="/">
         <img class="img-fluid rounded-circle" src="https://i.ibb.co/NsFC71t/RM-Logo.png" alt="logo">
@@ -8,36 +8,36 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="container-fluid collapse navbar-collapse d-flex-end" id="navbarNav">
+      <div class="container-fluid collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <router-link to="/">
-              <b class="container text-white">Home</b>
+              <b class="container text-success">Home</b>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about">
-              <b class="container text-white">About</b>
+              <b class="container text-success">About</b>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/resume">
-              <b class="container text-white">Resume</b>
+              <b class="container text-success">Resume</b>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/project">
-              <b class="container text-white">Projects</b>
+              <b class="container text-success">Projects</b>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/testimonial">
-              <b class="container text-white">Reviews</b>
+              <b class="container text-success">Reviews</b>
             </router-link>
           </li>
           <li class="nav-item">
             <router-link to="/reachme">
-              <b class="container text-white">Contact</b>
+              <b class="container text-success">Contact</b>
             </router-link>
           </li>
         </ul>
@@ -45,21 +45,11 @@
     </div>
   </nav>
 </template>
-  
-  <script>
-      export default {
-          data(){
-              return
-          }
-      }
-  </script>
-  
-  <style scoped>
-  .navbar {
- display: auto;
- justify-content: end;
- align-items: end;  
- font-family:  Righteous;
- border-radius: 0%;
-  }
-  </style>
+
+<style scoped>
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1); /* Translucent swamp green background */
+  font-family: Righteous;
+  border-radius: 0;
+}
+</style>
