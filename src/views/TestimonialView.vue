@@ -1,17 +1,17 @@
 <template>
   <main> 
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <h1 class="text-success">Reviews</h1>
+      <h1 class="text-center text-success mb-4">Reviews</h1>
       <div class="carousel-inner">
         <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
-          <div class="card mb-3 w-100">
-            <div class="row g-0 bg-white rounded-2">
-              <div class="col-lg-4 bg-white my-auto">
-                <img :src="testimonial.profile" class="img-fluid rounded-start vh-25" :alt="testimonial.name">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img :src="testimonial.profile" class="img-fluid rounded-start" :alt="testimonial.name">
               </div>
-              <div class="col-lg-8 bg-white">
+              <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title text-black text-decoration-underline fs-3">{{ testimonial.name + ' ' + testimonial.surname }}</h5>
+                  <h5 class="card-title text-black text-decoration-underline fs-4">{{ testimonial.name + ' ' + testimonial.surname }}</h5>
                   <p class="card-text text-success">{{ testimonial.quotes }}</p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 #testimonialCarousel {
-  padding: 20vh;
+  padding: 20px;
 }
 
 h1, h5, p {
@@ -55,11 +55,15 @@ h1, h5, p {
 }
 
 .carousel-inner {
-  padding: 3vh;
+  padding: 30px;
 }
 
 h1 {
-  font-size: 3rem; 
+  font-size: 2rem; 
+}
+
+.carousel-item {
+  min-height: 300px; /* Set a minimum height for carousel items */
 }
 
 </style>
