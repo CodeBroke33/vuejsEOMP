@@ -11,7 +11,13 @@
         </div>
         <div class="col-md-6">
           <h1 class="text-shadow">
-            <span id="typed-text" class="text-success"></span>
+            <p class="text-black">Hello,</p>
+            <p class="text-black">I'm Razeen Mackenzie</p>
+            <p class="text-black">An Skilled</p>
+            <p class="text-black">Web Developer,</p>
+            <p class="text-black">OPS Administrator</p>
+            <p class="text-black">and</p>
+            <p class="text-black">Graphic Designer</p>
           </h1>
         </div>
       </div>
@@ -21,41 +27,7 @@
 
 <script>
 export default {
-  mounted() {
-    const typedTextSpan = document.getElementById('typed-text');
-    const textArray = ['Hello,', "I'm Razeen Mackenzie", 'An Skilled', 'Web Developer,', 'OPS Administrator', 'and', 'Graphic Designer'];
-    const typingDelay = 200;
-    const erasingDelay = 100;
-    const newTextDelay = 100; // Delay between current and next text
-    let textArrayIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-      if (charIndex < textArray[textArrayIndex].length) {
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-      } else {
-        setTimeout(erase, newTextDelay);
-      }
-    }
-
-    function erase() {
-      if (charIndex > 0) {
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-      } else {
-        textArrayIndex++;
-        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      if (textArray.length) setTimeout(type, newTextDelay + 250);
-    });
-  }
+  
 }
 </script>
 
@@ -69,7 +41,7 @@ main {
   max-width: 100%;
   height: 500px;
   border-radius: 10%;
-  border: solid 3px grey;
+  border: solid 3px rgb(0, 0, 0);
 }
 
 h1 {
@@ -87,4 +59,7 @@ h1 {
 .we {
   font-size: x-small;
 }
+
+
+
 </style>
