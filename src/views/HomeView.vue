@@ -10,9 +10,9 @@
           />
         </div>
         <div class="col-md-6">
-          <h1 class="text-shadow">
-            <p class="text-black">Hello,</p>
-            <p class="text-black">I'm Razeen Mackenzie</p>
+          <h1 class="text-shadow text-md-center">
+            <p class="text-black">Hello, I'm</p>
+            <p class="text-black">Razeen Mackenzie</p>
             <p class="text-black">An Skilled</p>
             <p class="text-black">Web Developer,</p>
             <p class="text-black">OPS Administrator</p>
@@ -24,12 +24,6 @@
     </div>
   </main>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style scoped>
 main {
@@ -60,6 +54,22 @@ h1 {
   font-size: x-small;
 }
 
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 </style>

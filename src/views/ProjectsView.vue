@@ -18,6 +18,19 @@
           </div>
         </div>
       </div>
+     
+      <h2 class="text-success mb-4 fs-2 text-decoration-underline">Graphic Design Projects</h2>
+      <div class="row">
+        <div v-for="(project, index) in graphicDesignProjects" :key="index" class="col-md-4">
+          <div class="card mb-4">
+            <img src="" class="card-img-top" alt="Project Image">
+            <div class="card-body bg-white">
+              <h5 class="card-title text-black">{{ project.name }}</h5>
+              <!-- You can remove the description and buttons for graphic design projects -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </main>
   </template>
