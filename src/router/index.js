@@ -30,11 +30,6 @@ const routes = [
     path: '/reachme',
     name: 'reachme',
     component: () => import('@/views/ReachMeView.vue')
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/LogIn.vue')
   }
 ]
 const router = createRouter({

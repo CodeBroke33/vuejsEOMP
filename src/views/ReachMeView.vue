@@ -31,30 +31,23 @@
         <h4 class="details fs-1 text-success">My Contact Details</h4>
       </div>
       <br /><br /><br />
-      <div class="row d-flex">
-        <div class="col text-success contact-item">
-          <i class="fas fa-envelope fs-2"></i><br />
-          Email: razeenmackenzie@gmail.com
-        </div>
-        <div class="col text-success contact-item">
-          <i class="fas fa-map-marker-alt fs-2"></i> <br />Location: Cape Town,
-          Athlone
-        </div>
-        <div class="col text-success contact-item">
-          <i class="fas fa-phone fs-2"></i> <br />Cellphone: 068 373 5646
-        </div>
+      
+      
+      <div class="row mb-4">
+      <h1 class="col text-center text-black fs-1">
+        <i class="fas fa-envelope text-success"></i>
+        <p class="fs-4">Email:<br> razeenmackenzie@gmail.com</p>
+      </h1>
+      <h1 class="col text-center text-black">
+        <i class="fas fa-map-marker-alt text-success fs-1"></i>
+        <p class="fs-4">Location: Cape Town,
+          Athlone</p>
+      </h1>
+      <div class="col text-center text-black">
+        <i class="fas fa-phone text-success fs-1"></i>
+        <p class="hey fs-4">Cellphone: 068 373 5646</p>
       </div>
-      <br /><br />
-      <!-- <div class="row d-flex">
-        <div class="col text-white contact-item">
-          <i class="fab fa-linkedin fs-2"></i> <br />LinkedIn:
-          linkedin.com/in/yourprofile
-        </div>
-        <div class="col text-white contact-item">
-          <i class="fab fa-linkedin fs-2"></i> <br />LinkedIn:
-          linkedin.com/in/yourprofile
-        </div>
-      </div> -->
+    </div>
       <br>
       <br>
 

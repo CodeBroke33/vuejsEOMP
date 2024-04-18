@@ -46,8 +46,8 @@
   </nav>
 </template>
 
-<style scoped>
-.navbar {
+  <style scoped>
+  .navbar {
   background-color: rgba(0, 0, 0, 0.1); /* Translucent swamp green background */
   font-family: Righteous;
   border-radius: 0;
