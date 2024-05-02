@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div class="container col mt-5">
+    <div class="container">
+      <!-- Education & Experience Heading -->
+      <div class="row justify-content-center text-center mt-5">
+        <h1 class="mb-4 text-black fs-1">Education & Experience</h1>
+      </div>
+
       <!-- Work Experience Section -->
-      <div class="we row d-flex justify-content-center mt">
-        <h1 class="we mb-4 text-black fs-1">Education & Experience</h1>
+      <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Work Experience</h2>
-        <div class="col-md-6" v-for="(work, index) in workExperience" :key="index">
-          <div class="card" style="width: 18rem;">
+        <div class="col-md-4" v-for="(work, index) in workExperience" :key="index">
+          <div class="card" style="width: 100%;">
             <div class="card-body">
               <h5 class="card-title text-success">{{ work.position }}</h5>
               <p class="card-text text-success">{{ work.company }}</p>
@@ -17,27 +21,25 @@
       </div>
 
       <!-- Education Section -->
-      <div class="we row justify-content-center mt">
+      <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Education</h2>
-        <div class="row">
-          <div class="col-md-6" v-for="(edu, index) in education" :key="index">
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title text-success">{{ edu.degree }}</h5>
-                <p class="card-text text-success">{{ edu.school }}</p>
-                <p class="card-text text-success">{{ edu.date }}</p>
-              </div>
+        <div class="col-md-4" v-for="(edu, index) in education" :key="index">
+          <div class="card mb-1" style="width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title text-success">{{ edu.degree }}</h5>
+              <p class="card-text text-success">{{ edu.school }}</p>
+              <p class="card-text text-success">{{ edu.date }}</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Skills Section -->
-      <div class="we row justify-content-center mt-3">
+      <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Skills</h2>
-        <div class="row mx-auto">
-          <div class="col-md-3 mx-auto" v-for="(skill, index) in skills" :key="index">
-            <div class="card bg-white text-white" style="width: 200px; height: 200px;">
+        <div class="row justify-content-center">
+          <div class="col-md-3" v-for="(skill, index) in skills" :key="index">
+            <div class="card mb-3 mx-auto" style="width: 200px; height: 200p;">
               <img :src="skill.image" class="card-img-top" alt="Skill Image" style="object-fit: cover; width: 100%; height: 100%;">
             </div>
           </div>
@@ -45,6 +47,12 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </template>
 
 <script>
@@ -102,15 +110,11 @@ export default {
         }
       ]
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-div {
-  padding: 5vh;
-}
-
 .we {
   font-family: Righteous;
 }
