@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="we">
     <div class="container">
       <!-- Education & Experience Heading -->
       <div class="row justify-content-center text-center mt-5">
@@ -12,7 +12,7 @@
         <div class="col-md-4" v-for="(work, index) in workExperience" :key="index">
           <div class="card" style="width: 100%;">
             <div class="card-body">
-              <h5 class="card-title text-success">{{ work.position }}</h5>
+              <h5 class="card-title text-black">{{ work.position }}</h5>
               <p class="card-text text-success">{{ work.company }}</p>
               <p class="card-text text-success">{{ work.date }}</p>
             </div>
@@ -26,7 +26,7 @@
         <div class="col-md-4" v-for="(edu, index) in education" :key="index">
           <div class="card mb-1" style="width: 100%;">
             <div class="card-body">
-              <h5 class="card-title text-success">{{ edu.degree }}</h5>
+              <h5 class="card-title text-black">{{ edu.degree }}</h5>
               <p class="card-text text-success">{{ edu.school }}</p>
               <p class="card-text text-success">{{ edu.date }}</p>
             </div>
