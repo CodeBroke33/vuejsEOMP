@@ -12,8 +12,8 @@
             <div class="card-body bg-white">
               <h5 class="card-title text-black">{{ project.name }}</h5>
               <p class="card-text text-success">{{ project.description }}</p>
-              <a :href="project.siteUrl" class="btn btn-success" target="_blank">Visit Site</a>
-              <a :href="project.githubUrl" class="btn btn-secondary" target="_blank">GitHub</a>
+              <a :href="project.netlify" class="btn btn-success" target="_blank">Visit Site</a>
+              <a :href="project.gitHub" class="btn btn-secondary" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
@@ -29,9 +29,9 @@
       class="img-fluid rounded"  
       alt="Sample Image"
     />
+    <a href="https://drive.google.com/file/d/1c7nTnJrJNoxhSEGdughylDv58yzRAHaM/view?usp=sharing" class="btn btn-success mt-3" target="_blank">See More</a>
       </div>
-    
-    </div>
+      </div>
     </div>
     </main>
   </template>
@@ -88,9 +88,9 @@
     // },
     computed: {
 
-//  jobTitile(){
-//     return this.$store.state.jobTitile
-//   },
+ jobTitile(){
+    return this.$store.state.jobTitile
+  },
   projects(){
     return this.$store.state.projects
   }

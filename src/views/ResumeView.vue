@@ -6,6 +6,7 @@
         <h1 class="mb-4 text-black fs-1">Education & Experience</h1>
       </div>
 
+        
       <!-- Work Experience Section -->
       <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Work Experience</h2>
@@ -19,7 +20,9 @@
           </div>
         </div>
       </div>
-
+      <br>
+      <br>
+      <br>
       <!-- Education Section -->
       <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Education</h2>
@@ -33,7 +36,10 @@
           </div>
         </div>
       </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
       <!-- Skills Section -->
       <div class="row justify-content-center text-center mt-4">
         <h2 class="text-success text-decoration-underline">Skills</h2>
@@ -45,14 +51,12 @@
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+ 
 </template>
 
 <script>
