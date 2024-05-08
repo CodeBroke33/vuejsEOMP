@@ -6,12 +6,12 @@
         <div class="col-md-6">
           <div><br><br><br></div>
           <h1 class="text-shadow fw-bold text-md-center">
-            <p class="text-black">Hello, I'm</p>
-            <p class="text-black">Razeen Mackenzie</p>
-            <p class="text-black">An Skilled</p>
-            <p class="text-black">Software Engineer</p>
-            <p class="text-black">&</p>
-            <p class="text-black">Graphic Designer</p>
+            <p class="pulse-text text-black">Hello, I'm</p> 
+            <p class="pulse-text text-black">Razien Mackenzie</p>
+            <p class="pulse-text text-black">A Skilled</p>
+            <p class="pulse-text text-black">Software Engineer</p>
+            <p class="pulse-text text-black">&</p>
+            <p class="pulse-text text-black">Graphic Designer</p>
           </h1>
           <!-- View CV Button -->
           <div class="row justify-content-center">
@@ -42,10 +42,9 @@
 export default {
   methods: {
     viewCV() {
-      // Replace with your actual CV link
       window.open(
         "https://drive.google.com/file/d/1Chle8-8UZhykq7UKKW7drthbJPLagMTk/view?usp=sharing",
-        "Raziens CV"
+        "_blank"
       );
     },
   },
@@ -73,11 +72,11 @@ main {
   border-radius: 5px;
   color: white;
   font-size: 1rem;
-  font-family: righteous;
+  font-family: 'Righteous', sans-serif;
 }
 
 h1 {
-  font-family: "Poppins", serif; /* Apply the Jersey 25 Charted font to h1 */
+  font-family: 'Poppins', serif;
   font-size: 3rem;
   text-transform: uppercase;
   line-height: 1;
@@ -90,6 +89,22 @@ h1 {
 
 .we {
   font-size: x-small;
+}
+
+.pulse-text {
+  animation: pulse 1.5s infinite; /* Apply the pulse animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to normal size */
+  }
 }
 
 /* Responsive Styling */
@@ -105,11 +120,11 @@ h1 {
   }
 
   .profile-img {
-    height: 350px; /* Adjust the image height for smaller screens */
+    height: 350px;
   }
 
   .view-cv-btn {
-    font-size: 0.9rem; /* Adjust the button size for smaller screens */
+    font-size: 0.9rem;
   }
 }
 
@@ -119,11 +134,11 @@ h1 {
   }
 
   .profile-img {
-    height: 300px; /* Adjust the image height for very small screens */
+    height: 300px;
   }
 
   .view-cv-btn {
-    font-size: 0.85rem; /* Adjust the button size for very small screens */
+    font-size: 0.85rem;
   }
 }
 </style>
