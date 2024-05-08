@@ -1,35 +1,35 @@
 <template>
   <div class="why container-fluid">
-    <h1 class="about text-success mt-5 mb-4">About Me</h1>
+    <h1 class="about text-black mt-5 mb-4">About Me</h1>
     
-    <p class="me fs-2 text-black">Hobbies & Interests</p>
+    <p class="me fs-2 text-success">Hobbies & Interests</p>
     <br>
     <div class="row mb-4">
-      <div class="col text-center text-black">
-        <i class="bi bi-laptop text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-laptop text-black"></i>
         <p class="hey fs-4">Tech</p>
       </div>
-      <div class="col text-center text-black">
-        <i class="bi bi-person-arms-up text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-person-arms-up text-black"></i>
         <p class="hey fs-4">Exercise</p>
       </div>
-      <div class="col text-center text-black">
-        <i class="bi bi-pencil text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-pencil text-black"></i>
         <p class="hey fs-4">Graphic Design</p>
       </div>
     </div>
     
     <div class="row mb-5">
-      <div class="col text-center text-black">
-        <i class="bi bi-controller text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-controller text-black"></i>
         <p class="hey fs-4">Gaming</p>
       </div>
-      <div class="col text-center text-black">
-        <i class="bi bi-palette-fill text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-palette-fill text-black"></i>
         <p class="hey fs-4">Art</p>
       </div>
-      <div class="col text-center text-black">
-        <i class="bi bi-graph-up text-success"></i>
+      <div class="col text-center text-success">
+        <i class="bi bi-graph-up text-black"></i>
         <p class="hey fs-4">Day Trading</p>
       </div>
     </div>
@@ -77,6 +77,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -131,7 +133,7 @@ export default {
 }
 
 .about {
-  font-family: righteous;
+  font-family: "Poppins", serif;
   font-size: 70px;
 }
 </style>

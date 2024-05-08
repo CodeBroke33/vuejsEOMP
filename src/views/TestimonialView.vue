@@ -1,18 +1,30 @@
 <template>
-  <main> 
+  <main class="testimonials-section"> 
     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <h1 class="text-center text-success mb-4">Reviews</h1>
+      <div><br><br></div>
+      
       <div class="carousel-inner">
-        <div v-for="(testimonial, index) in testimonials" :key="index" :class="{ 'carousel-item': true, active: index === 0 }">
-          <div class="card mb-3">
+        <h1 class="what text-center fs-1 text-black fw-bold mb-4">Colleague Testimonials</h1>
+        <div
+          v-for="(testimonial, index) in testimonials"
+          :key="index"
+          :class="{ 'carousel-item': true, active: index === 0 }"
+          class="p-3"
+        >
+          <div class="card testimonial-card">
             <div class="row g-0">
               <div class="col-md-4">
-                <img :src="testimonial.profile" class="img-fluid rounded-start" :alt="testimonial.name">
+                <img
+                  :src="testimonial.profile"
+                  class="img-fluid rounded-start testimonial-image"
+                  :alt="testimonial.name"
+                />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title text-black text-decoration-underline fs-4">{{ testimonial.name + ' ' + testimonial.surname }}</h5>
-                  <p class="card-text text-success">{{ testimonial.quotes }}</p>
+                  <h5 class="card-title text-success fw-bold fs-3">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+                  <div><br><br></div>
+                  <p class="card-text text-secondary text-black">{{ testimonial.quotes }}</p>
                 </div>
               </div>
             </div>
@@ -42,28 +54,50 @@ export default {
 </script>
 
 <style scoped>
-#testimonialCarousel {
-  padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-h1, h5, p {
-  font-family: Righteous;
-}
-
-.card {
-  border-radius: 8px;
-}
-
-.carousel-inner {
-  padding: 30px;
+.testimonials-section {
+  padding: 40px;
+  background-color: #f8f9fa; /* A subtle background color to contrast with the white carousel */
 }
 
 h1 {
-  font-size: 2rem; 
+  font-size: 2.5rem; /* Larger font size for a more authoritative look */
+  font-family: 'Righteous'; /* A more formal font */
+}
+
+.testimonial-card {
+  border-radius: 12px; /* Softer border radius for a more premium look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: white;
+}
+
+.testimonial-image {
+  object-fit: cover; /* Ensure the image is cropped nicely */
+}
+
+.carousel-inner {
+  padding: 20px; /* Less padding for a tighter design */
 }
 
 .carousel-item {
-  min-height: 300px; /* Set a minimum height for carousel items */
+  min-height: 350px; /* Slightly taller carousel items */
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Change the color of carousel controls to suit the theme */
+}
+
+/* .card-text {
+  display: ;
+} */
+
+.card-title, .card-text {
+ font-family: righteos;
+}
+
+.what{
+  font-family: 'Poppins', sans-serif;
+}
 </style>

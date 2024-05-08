@@ -2,7 +2,8 @@
   <main>
     <div class="contact">
       <div id="wrap">
-        <h1 class="text-success display-2">Reach Me</h1>
+        <h1 class="so text-black fw-bold display-2">Reach Me<p class="why text-success d-flex text-right fs-2 align-items-right">Let's Connect</p></h1>
+        <!-- <p class="text-success d-flex text-right fs-2 align-items-right">Let's Connect</p> -->
         <br /><br /><br />
         <div id="form-wrap">
           <form action="https://formspree.io/f/mzblyrzz" method="POST">
@@ -48,9 +49,15 @@
         <p class="hey fs-4">Cellphone: 068 373 5646</p>
       </div>
     </div>
+     <div>
+      <h1></h1> 
       <br>
       <br>
-
+      <br>
+      <br>
+      <br>
+      <br>
+</div>
     </div>
   </main>
 </template>
@@ -62,6 +69,8 @@ export default {};
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 div,
 form,
 fieldset,
@@ -232,5 +241,14 @@ label {
   #form-wrap:after {
     bottom: -20px;
   }
+}
+
+.so {
+  font-family: "Poppins", serif;
+  font-size: 70px;
+}
+
+.why {
+  font-family: righteous;
 }
 </style>

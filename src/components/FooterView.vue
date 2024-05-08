@@ -1,5 +1,5 @@
 <template>
-  <div class="footer container-fluid fixed-bottom">
+  <div class="footer container-fluid fixed-bottom border-top shadow">
     <div class="row">
       <p class="lead text-success">
         <b class="bold-text text-success">-Code by Razien Mackenzie &copy;</b>
@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: rgba(0, 0, 0, 0.1); /* Translucent swamp green background */
+  background-color: rgba(190, 190, 190, 0.1); /* Translucent swamp green background */
   font-family: Righteous;
   border-radius: 0;
 }

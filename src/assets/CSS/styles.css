@@ -41,11 +41,11 @@ img[alt='logo']{
     margin: 0;
     padding: 0;
      /* Prevent scrollbars */
-     background-image: url('../ebdee9b4.gif');
+     /* background-image: url('../ebdee9b4.gif');
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: repeat; 
     width: 100%;
-    height: 100%;
+    height: 100%; */
 }
 #video-background {
   position: fixed;

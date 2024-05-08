@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-toggler fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-toggler fixed-top shadow">
     <div class="container-fluid">
       <router-link to="/">
-        <img class="img-fluid rounded-circle" src="https://i.ibb.co/NsFC71t/RM-Logo.png" alt="logo">
+        <img class="img-fluid rounded-circle shadow" src="https://i.ibb.co/NsFC71t/RM-Logo.png" alt="logo">
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
 
   <style scoped>
   .navbar {
-  background-color: rgba(0, 0, 0, 0.1); /* Translucent swamp green background */
+  background-color: rgba(190, 190, 190, 0.1); 
   font-family: Righteous;
   border-radius: 0;
 }

@@ -1,7 +1,7 @@
 <!-- ProjectPage.vue -->
 <template>
     <main>
-      <div class="projects  mt-5">
+      <div class="projects text-center mt-5">
       <h2 class="me text-success mb-4 text-black">Projects</h2>
 
       <h2 class="text-success mb-4 fs-2 text-decoration-underline">Full Stack Projects</h2>
@@ -33,6 +33,7 @@
       </div>
       </div>
     </div>
+    <div><br><br></div>
     </main>
   </template>
   
@@ -100,13 +101,16 @@
   </script>
   
   <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
   .projects {
     padding: 6vh;
     font-family: righteous;
   }
 
   .me {
-    font-size: 80px;
+    font-size: 70px;
+    font-family: "Poppins", serif;
   }
   </style>
   
