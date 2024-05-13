@@ -19,7 +19,7 @@
               <button
                 class="view-cv-btn bg-success mt-3 text-black fw-bold"
                 @click="viewCV"
-              >
+               style="font-family: righteous;">
                 View CV
               </button>
             </div>
@@ -43,7 +43,7 @@ export default {
   methods: {
     viewCV() {
       window.open(
-        "https://drive.google.com/file/d/1Chle8-8UZhykq7UKKW7drthbJPLagMTk/view?usp=sharing",
+        "https://drive.google.com/file/d/1p4JYoYadGWu_wlMipEOgLdawl9w1fJj3/view?usp=sharing",
         "_blank"
       );
     },
@@ -141,4 +141,6 @@ h1 {
     font-size: 0.85rem;
   }
 }
+
+
 </style>

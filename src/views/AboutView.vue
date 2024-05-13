@@ -68,7 +68,7 @@ export default {
     viewCV() {
       // Replace the link with your actual CV link
       window.open(
-        "https://drive.google.com/file/d/1Chle8-8UZhykq7UKKW7drthbJPLagMTk/view?usp=sharing",
+        "https://drive.google.com/file/d/1p4JYoYadGWu_wlMipEOgLdawl9w1fJj3/view?usp=sharing",
         "Raziens CV"
       );
     },

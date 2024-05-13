@@ -22,7 +22,7 @@
           </li>
           <li class="nav-item">
             <router-link to="/resume">
-              <b class="container text-success">Resume</b>
+              <b class="container text-success">Work & Education</b>
             </router-link>
           </li>
           <li class="nav-item">
