@@ -43,7 +43,7 @@ export default {
   methods: {
     viewCV() {
       window.open(
-        "https://drive.google.com/file/d/1oCwzxAfnMYHEjuFRLgD2equPHcWVvdLs/view?usp=sharing",
+        "https://drive.google.com/file/d/1jPxwDnQC6dCmqyt_q8MT-ki_2UIGkLrn/view?usp=sharing",
         "_blank"
       );
     },
