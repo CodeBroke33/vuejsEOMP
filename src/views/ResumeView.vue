@@ -48,6 +48,41 @@
           </div>
         </div>
       </div>
+      <h2 class="text-success text-decoration-underline">Badges</h2>
+      <div class="row mb-4">
+  <div class="col text-center text-black">
+    <p class="hey fs-4">SCRUM Methodology</p>
+    <img
+      src="https://i.ibb.co/kxx0xBp/LCStudio-SCRUM-Badge.png"
+      class="img-fluid rounded"
+      alt="Sample Image"
+    />
+    <div class="mt-3">
+      <a
+        href="https://drive.google.com/file/d/1c7nTnJrJNoxhSEGdughylDv58yzRAHaM/view?usp=sharing"
+        class="btn btn-success"
+        target="_blank"
+      >See More</a>
+    </div>
+  </div>
+
+  <div class="col text-center text-black">
+    <p class="hey fs-4">Cisco Python Essentials 1</p>
+    <img
+      src="https://i.ibb.co/M52VVY4/python-essentials-1-50.png"
+      class="img-fluid rounded"
+      alt="Sample Image"
+    />
+    <div class="mt-3">
+      <a
+        href="https://drive.google.com/file/d/1c7nTnJrJNoxhSEGdughylDv58yzRAHaM/view?usp=sharing"
+        class="btn btn-success"
+        target="_blank"
+      >See More</a>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </template>
