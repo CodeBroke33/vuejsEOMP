@@ -45,7 +45,7 @@
           <!-- Stats -->
           <div class="stats-container">
             <div class="stat-item">
-              <div class="stat-number">2+</div>
+              <div class="stat-number">5+</div>
               <div class="stat-label">Years Experience</div>
             </div>
             <div class="stat-divider"></div>
@@ -122,7 +122,10 @@
             <span class="tech-pill">Node.js</span>
             <span class="tech-pill">Vue.js</span>
             <span class="tech-pill">MySQL</span>
-            <span class="tech-pill">And much more...</span>
+            <router-link to="/resume#technical-skills" class="tech-pill more-link">
+              And much more...
+              <i class="bi bi-arrow-right"></i>
+            </router-link>
           </div>
         </div>
       </div>
